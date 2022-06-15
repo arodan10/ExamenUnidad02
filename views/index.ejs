@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="w-screen h-screen flex justify-center items-center
+    bg-gradient-to-br from-purple-700 to-amber-700">
+        <form class="p-10 bg-white rounded-xl drop-shadow-lg space-y-5" action="/main" method="GET">
+          <input type="hidden" name="remember" value="true">
+            <h1 class="text-center text-3xl">INICIAR SESION</h1>
+            <div class="flex flex-col space-y-2">
+                <label class="text-sm font-light" for="email">Email</label>
+                <input id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email address">
+            </div>
+            <div class="flex flex-col space-y-2">
+                <label class="text-sm font-light" for="password">Password</label>
+                <input id="password" name="password" type="password" autocomplete="current-password" required class=" w-96 appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password">                    
+            </div>
+
+            <div>
+                <input type="checkbox" name="remember" id="remember" />
+                <label class="text-sm font-light" for="remember">Remember me</label>
+            </div>
+
+            <button class="w-full px-10 py-2 bg-blue-600 text-white rounded-md
+            hover:bg-blue-500 hover:drop-shadow-md duration-300 ease-in" type="submit">
+                Sign In
+            </button>
+
+            <p class="text-right"><a class="text-blue-600 text-sm font-light hover:underline"
+                    href="https://www.kindacode.com">Forget Password?</a></p>
+        </form>
+    </div>
+  </body>
+</html>
